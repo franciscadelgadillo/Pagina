@@ -1,0 +1,288 @@
+/* Styles */
+
+body {
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+    background: white;
+    color: rgb(84, 123, 134);
+    font-size: 1.5em;
+    line-height: 0.5;
+    text-align: center;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 400px;
+            
+}
+
+h1 {
+    margin: 0;
+    padding: 3em 0;
+
+}
+h2{
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 1em 0;
+
+}
+
+ h3 {
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 1em 0;
+
+}
+
+p {
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+    padding: 1em 0;
+
+}
+
+/* Boton de paquina principal  */
+
+.btn{ /*Botón temas*/
+    display: inline-block;
+    background: #9695fc;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 3em;
+    border: 3px solid #9695fc;
+    margin: 0.5em 0;
+}
+
+.btn:hover{ /*Cambiar el color del Botón al pasar el mouse*/
+    background: #fafafa;
+    color: #333;
+}
+#showcase {/*centro de la pagina */
+    min-height: 350px;
+    color: white;
+    text-align: center;
+
+}
+/*caja principal */
+#showcase .bg-image {
+    position: absolute;
+    background: rgb(47, 35, 116);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+        
+}
+
+#showcase .bg-image1 {
+    position: absolute;
+    background: #666699;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+        
+}
+#showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+}
+
+#showcase .content
+#section-a .content
+#section .content{
+    padding: 0.2 1.5em;
+
+}
+
+/* Section A */ /*es el fodo del blque A*/
+
+#section-a {
+    background: #9696e0;
+    color: white;
+    padding: 1em 0em 1em ;
+
+   
+
+}
+
+/* Section B */
+
+#section-b {
+    padding: 4em 4em 4em ;
+
+}
+#section-b .btn{
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+/*estilo de los botones */
+#section-b li {
+    margin-bottom: 0.5em;
+    background: #ffffff;
+  
+
+}
+#section-b img{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#section {
+    padding: 3em;
+    list-style: none;
+    margin: 1em;
+    padding: 1em;
+      
+  }
+
+.content1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.content2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;  
+}
+
+.photo { 
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.5em
+
+}
+
+/*fina de la pagina*/
+#main-footer {
+    padding: 2em;
+    background: #9695fc;
+    color: #0303ee;
+    text-align: center;
+
+
+}
+#main-footer1 a {
+    padding: 2em;
+  color:  #0303ee;/*color letra*/
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em
+}
+/*botones de de back y youtube*/
+.volver {
+    display: grid;
+    grid-column: 1/5;
+    background: #9695fc;
+    text-align: center;
+    font-size: 0.5em
+
+}
+
+
+       
+/* cambio de color se caja*/
+.volver:hover {
+    background: #c8c8e0;
+    color:#f7f7fc;
+    text-align: center;
+
+}
+
+.volver h3:hover {
+    color:#9695fc;
+    text-align: center;
+}
+.back {
+    display: grid;
+    grid-column: 1/5;
+    background: #666699;
+    text-align: center;
+    font-size: 0.5em
+
+
+}
+.back:hover {
+    background: #9695fc;
+    color:#9695fc;
+    text-align: center;
+
+}
+
+.back h3:hover {
+    color:#666699;
+    text-align: center;
+}
+  
+/* Media*/
+
+@media(min-width: 600px) {
+   .grid{
+       display: grid;
+       grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+   }
+
+    .content, #section-a {
+    grid-column: 1/5;
+
+   }
+
+   #section-b ul {
+    grid-column: 1/5;
+
+}
+
+   #section-b ul {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+   #section-b li {
+    width: 20%;
+
+   }
+
+   #main-footer div {
+    grid-column: span 4;
+  }
+
+  #main-footer1 a{
+    display: grid;
+    grid-column: 1/4;
+ }
+
+  .content1 {
+    grid-column: span 5;
+    display: flex;
+    justify-content: space-around;
+         
+  }
+
+  .content2 {
+    grid-column: span 5;
+    display: flex;
+    justify-content: space-around;
+         
+  }
+  
+}
